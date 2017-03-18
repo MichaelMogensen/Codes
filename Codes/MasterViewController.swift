@@ -6,6 +6,8 @@
 //  Copyright © 2017 Michael Mogensen. All rights reserved.
 //
 
+// Min kommentar.
+
 import UIKit
 import CoreData
 
