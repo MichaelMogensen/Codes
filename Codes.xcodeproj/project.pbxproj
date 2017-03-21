@@ -16,6 +16,9 @@
 		1E17B97F1E7D7E8A0098B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E17B97D1E7D7E8A0098B579 /* LaunchScreen.storyboard */; };
 		1E17B98A1E7D7E8A0098B579 /* CodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9891E7D7E8A0098B579 /* CodesTests.swift */; };
 		1E17B9951E7D7E8A0098B579 /* CodesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9941E7D7E8A0098B579 /* CodesUITests.swift */; };
+		1E5C4C551E81A903007B0D4A /* Copy-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E5C4C541E81A903007B0D4A /* Copy-100.png */; };
+		1E5C4C571E81AAB6007B0D4A /* Refresh-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E5C4C561E81AAB6007B0D4A /* Refresh-100.png */; };
+		1EA79C111E81F4A6000A0446 /* Delete-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EA79C101E81F4A6000A0446 /* Delete-100.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		1E17B9901E7D7E8A0098B579 /* CodesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E17B9941E7D7E8A0098B579 /* CodesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesUITests.swift; sourceTree = "<group>"; };
 		1E17B9961E7D7E8A0098B579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5C4C541E81A903007B0D4A /* Copy-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Copy-100.png"; path = "../../../../Downloads/Copy-100.png"; sourceTree = "<group>"; };
+		1E5C4C561E81AAB6007B0D4A /* Refresh-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Refresh-100.png"; path = "../../../../Downloads/Refresh-100.png"; sourceTree = "<group>"; };
+		1EA79C101E81F4A6000A0446 /* Delete-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Delete-100.png"; path = "../../../../Downloads/Delete-100.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		1E17B96E1E7D7E8A0098B579 /* Codes */ = {
 			isa = PBXGroup;
 			children = (
+				1E5C4C4F1E819F79007B0D4A /* Icons */,
 				1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */,
 				1E17B9741E7D7E8A0098B579 /* MasterViewController.swift */,
 				1E17B9761E7D7E8A0098B579 /* DetailViewController.swift */,
@@ -129,6 +136,16 @@
 				1E17B9961E7D7E8A0098B579 /* Info.plist */,
 			);
 			path = CodesUITests;
+			sourceTree = "<group>";
+		};
+		1E5C4C4F1E819F79007B0D4A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				1EA79C101E81F4A6000A0446 /* Delete-100.png */,
+				1E5C4C561E81AAB6007B0D4A /* Refresh-100.png */,
+				1E5C4C541E81A903007B0D4A /* Copy-100.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +258,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5C4C551E81A903007B0D4A /* Copy-100.png in Resources */,
 				1E17B97F1E7D7E8A0098B579 /* LaunchScreen.storyboard in Resources */,
 				1E17B97C1E7D7E8A0098B579 /* Assets.xcassets in Resources */,
 				1E17B97A1E7D7E8A0098B579 /* Main.storyboard in Resources */,
+				1EA79C111E81F4A6000A0446 /* Delete-100.png in Resources */,
+				1E5C4C571E81AAB6007B0D4A /* Refresh-100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
