@@ -12,34 +12,56 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
+    @IBOutlet weak var btnCopyUsername: UIButton!
+    
+    @IBOutlet weak var btnCopyPassword: UIButton!
+    
+    @IBOutlet weak var btnRefreshPassword: UIButton!
+    
+    @IBOutlet weak var btnDelete: UIButton!
+    
+    // Update the user interface for the detail item.
+    func configureView()
+    {
+        
+        if let detail = self.detailItem
+        {
+            if let label = self.detailDescriptionLabel
+            {
                 label.text = detail.timestamp!.description
             }
         }
     }
 
-    override func viewDidLoad() {
+    // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
+         self.configureView()
     }
 
-    override func didReceiveMemoryWarning() {
+    // Dispose of any resources that can be recreated.
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: Event? {
-        didSet {
+    var detailItem: Event?
+    {
+        didSet
+        {
             // Update the view.
             self.configureView()
         }
     }
 
+    @IBAction func OnBtnCopyUsername(_ sender: Any)
+    {
+        MessageBox.Show(view: self, title: "Hello", message: "Username pressed");
+        
 
+    }
+
+    
 }
 
