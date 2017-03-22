@@ -1,0 +1,1 @@
+For Danish, curly brackets should be at Option + Shift 8 and 9. {}

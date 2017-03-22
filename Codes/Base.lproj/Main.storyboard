@@ -86,6 +86,9 @@
                                     <constraint firstAttribute="height" constant="46" id="D9p-uK-h4G"/>
                                 </constraints>
                                 <state key="normal" image="Copy.png"/>
+                                <connections>
+                                    <action selector="OnBtnCopyPassword:" destination="JEX-9P-axG" eventType="touchUpInside" id="OIP-gh-Zw9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAi-yu-FNx">
                                 <rect key="frame" x="313" y="220" width="46" height="46"/>
@@ -93,6 +96,9 @@
                                     <constraint firstAttribute="width" constant="46" id="SqX-dj-4yZ"/>
                                 </constraints>
                                 <state key="normal" image="Refresh.png"/>
+                                <connections>
+                                    <action selector="OnBtnRefreshPassword:" destination="JEX-9P-axG" eventType="touchUpInside" id="9PM-xs-dya"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJE-bm-IrT">
                                 <rect key="frame" x="313" y="601" width="46" height="46"/>
@@ -100,6 +106,9 @@
                                     <constraint firstAttribute="height" constant="46" id="VB1-s9-z7n"/>
                                 </constraints>
                                 <state key="normal" image="Delete.png"/>
+                                <connections>
+                                    <action selector="OnBtnDelete:" destination="JEX-9P-axG" eventType="touchUpInside" id="mkA-54-Gqb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -173,11 +182,11 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Koder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

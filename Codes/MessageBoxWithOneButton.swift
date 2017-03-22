@@ -12,9 +12,10 @@ import UIKit
 
 class MessageBox
 {
-    static public func Show(view: UIViewController,
-              title: String,
-              message: String)
+    static public func Show(
+        view: UIViewController,
+        title: String,
+        message: String)
     {
         let alert = UIAlertController(
             title: title as String,

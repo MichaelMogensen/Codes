@@ -20,6 +20,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var btnDelete: UIButton!
     
+    var detailItem: Event?
+        {
+        didSet
+        {
+            // Update the view.
+            self.configureView()
+        }
+    }
+    
     // Update the user interface for the detail item.
     func configureView()
     {
@@ -46,22 +55,31 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    var detailItem: Event?
-    {
-        didSet
-        {
-            // Update the view.
-            self.configureView()
-        }
-    }
-
     @IBAction func OnBtnCopyUsername(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hello", message: "Username pressed");
-        
-
+        MessageBox.Show(view: self, title: "Hej", message: "Brugernavn");
     }
 
+    @IBAction func OnBtnCopyPassword(_ sender: Any)
+    {
+        MessageBox.Show(view: self, title: "Hej", message: "Password");
+        
+    }
     
+    @IBAction func OnBtnRefreshPassword(_ sender: Any)
+    {
+        MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
+    }
+    
+    
+    @IBAction func OnBtnDelete(_ sender: Any)
+    {
+        MessageBox.Show(view: self, title: "Hej", message: "Delete");
+    }
 }
+
+
+
+
+
 
