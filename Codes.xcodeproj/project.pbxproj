@@ -12,6 +12,8 @@
 		1E0746D91E81F8A400B33720 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746D61E81F8A400B33720 /* Refresh.png */; };
 		1E0746DB1E81F8D100B33720 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746DA1E81F8D100B33720 /* Settings.png */; };
 		1E0746E01E8208BD00B33720 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746DF1E8208BD00B33720 /* Notes.txt */; };
+		1E0746ED1E85455600B33720 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0746EB1E85455600B33720 /* MessageBox.swift */; };
+		1E0746EE1E85455600B33720 /* YesNoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0746EC1E85455600B33720 /* YesNoBox.swift */; };
 		1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */; };
 		1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9711E7D7E8A0098B579 /* Codes.xcdatamodeld */; };
 		1E17B9751E7D7E8A0098B579 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9741E7D7E8A0098B579 /* MasterViewController.swift */; };
@@ -46,6 +48,8 @@
 		1E0746D61E81F8A400B33720 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refresh.png; path = ../../../../Downloads/Refresh.png; sourceTree = "<group>"; };
 		1E0746DA1E81F8D100B33720 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../../../Downloads/Settings.png; sourceTree = "<group>"; };
 		1E0746DF1E8208BD00B33720 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		1E0746EB1E85455600B33720 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = MessageBoxes/MessageBox.swift; sourceTree = "<group>"; };
+		1E0746EC1E85455600B33720 /* YesNoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YesNoBox.swift; path = MessageBoxes/YesNoBox.swift; sourceTree = "<group>"; };
 		1E17B96C1E7D7E8A0098B579 /* Codes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E17B9721E7D7E8A0098B579 /* Codes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Codes.xcdatamodel; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		1E0746DC1E81FE9C00B33720 /* MessageBoxes */ = {
 			isa = PBXGroup;
 			children = (
+				1E0746EB1E85455600B33720 /* MessageBox.swift */,
+				1E0746EC1E85455600B33720 /* YesNoBox.swift */,
 			);
 			name = MessageBoxes;
 			sourceTree = "<group>";
@@ -304,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0746EE1E85455600B33720 /* YesNoBox.swift in Sources */,
 				1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */,
 				1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */,
 				1E17B9751E7D7E8A0098B579 /* MasterViewController.swift in Sources */,
+				1E0746ED1E85455600B33720 /* MessageBox.swift in Sources */,
 				1E17B9771E7D7E8A0098B579 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

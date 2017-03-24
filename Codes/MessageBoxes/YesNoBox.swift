@@ -12,39 +12,52 @@ import UIKit
 // Show simple message box with one button.
 class YesNoBox
 {
-    static public var Answer: Int = -1
+    //static public var Answer: Int = -1
     
     static public func Show(
         view: UIViewController,
         title: String,
         message: String,
-        button1Title: String = "Yes",
-        button2Title: String = "No")
+        yesHandler: @escaping (UIAlertAction) -> Void,
+        noHandler: @escaping (UIAlertAction) -> Void) -> Void
     {
         let alert = UIAlertController(
             title: title as String,
             message: message as String,
             preferredStyle: UIAlertControllerStyle.alert)
         
-        alert.addAction(UIAlertAction(
-            title: button1Title,
+        let firstAction = UIAlertAction(
+            title: "Yes",
             style: UIAlertActionStyle.default,
-            handler:
-            { action in
-                Answer = 1
-            }))
-        alert.addAction(UIAlertAction(
-            title: button2Title,
+            handler: yesHandler)
+        alert.addAction(firstAction)
+        
+        let secondAction = UIAlertAction(
+            title: "No",
             style: UIAlertActionStyle.default,
-            handler:
-            { action in
-                Answer = 0
-            }))
+            handler: noHandler)
+        alert.addAction(secondAction)
         
         view.present(alert, animated: true, completion: nil)
         
     }
 }
+
+/*
+
+UIAlertAction -> Void
+ 
+{ action -> Void in
+ 
+ print("0")
+}
+ 
+let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
+    //Do some stuff
+}
+ */
+
+
 
 
 
