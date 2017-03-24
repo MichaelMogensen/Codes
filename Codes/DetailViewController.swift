@@ -82,7 +82,9 @@ class DetailViewController: UIViewController {
 
     @IBAction func OnBtnCopyPassword(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Password");
+        //MessageBox.Show(view: self, title: "Hej", message: "Password");
+        
+        InputBox.Show(view: self, title: "Write something", message: "Text")
         
     }
     
