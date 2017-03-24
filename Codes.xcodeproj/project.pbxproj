@@ -11,7 +11,6 @@
 		1E0746D81E81F8A400B33720 /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746D51E81F8A400B33720 /* Delete.png */; };
 		1E0746D91E81F8A400B33720 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746D61E81F8A400B33720 /* Refresh.png */; };
 		1E0746DB1E81F8D100B33720 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746DA1E81F8D100B33720 /* Settings.png */; };
-		1E0746DE1E81FED500B33720 /* MessageBoxWithOneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0746DD1E81FED500B33720 /* MessageBoxWithOneButton.swift */; };
 		1E0746E01E8208BD00B33720 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746DF1E8208BD00B33720 /* Notes.txt */; };
 		1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */; };
 		1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9711E7D7E8A0098B579 /* Codes.xcdatamodeld */; };
@@ -46,7 +45,6 @@
 		1E0746D51E81F8A400B33720 /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Delete.png; path = ../../../../Downloads/Delete.png; sourceTree = "<group>"; };
 		1E0746D61E81F8A400B33720 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refresh.png; path = ../../../../Downloads/Refresh.png; sourceTree = "<group>"; };
 		1E0746DA1E81F8D100B33720 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../../../Downloads/Settings.png; sourceTree = "<group>"; };
-		1E0746DD1E81FED500B33720 /* MessageBoxWithOneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBoxWithOneButton.swift; sourceTree = "<group>"; };
 		1E0746DF1E8208BD00B33720 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		1E17B96C1E7D7E8A0098B579 /* Codes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		1E0746DC1E81FE9C00B33720 /* MessageBoxes */ = {
 			isa = PBXGroup;
 			children = (
-				1E0746DD1E81FED500B33720 /* MessageBoxWithOneButton.swift */,
 			);
 			name = MessageBoxes;
 			sourceTree = "<group>";
@@ -311,7 +308,6 @@
 				1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */,
 				1E17B9751E7D7E8A0098B579 /* MasterViewController.swift in Sources */,
 				1E17B9771E7D7E8A0098B579 /* DetailViewController.swift in Sources */,
-				1E0746DE1E81FED500B33720 /* MessageBoxWithOneButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

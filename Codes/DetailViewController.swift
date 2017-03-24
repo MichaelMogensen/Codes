@@ -57,24 +57,25 @@ class DetailViewController: UIViewController {
 
     @IBAction func OnBtnCopyUsername(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Brugernavn");
+        //MessageBox.Show(view: self, title: "Hej", message: "Brugernavn");
+        //YesNoBox.Show();
     }
 
     @IBAction func OnBtnCopyPassword(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Password");
+        //MessageBox.Show(view: self, title: "Hej", message: "Password");
         
     }
     
     @IBAction func OnBtnRefreshPassword(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
+        //MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
     }
     
     
     @IBAction func OnBtnDelete(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Delete");
+        //MessageBox.Show(view: self, title: "Hej", message: "Delete");
     }
 }
 

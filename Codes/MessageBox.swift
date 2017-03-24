@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
-
+// Show simple message box with one button.
 class MessageBox
 {
     static public func Show(
         view: UIViewController,
         title: String,
-        message: String)
+        message: String,
+        buttonTitle: String = "OK")
     {
         let alert = UIAlertController(
             title: title as String,
@@ -23,7 +24,7 @@ class MessageBox
             preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addAction(UIAlertAction(
-            title: "OK",
+            title: buttonTitle,
             style: UIAlertActionStyle.default,
             handler: nil))
         
