@@ -58,49 +58,39 @@ class DetailViewController: UIViewController {
 
     @IBAction func OnBtnCopyUsername(_ sender: Any)
     {
-        /*
-        YesNoBox.Show(
-            view:self,
-            title: "Yes or now",
-            message: "Please choose");
-        */
-        
-        /*
         let yesClosure = { (action: UIAlertAction) -> Void in
             MessageBox.Show(view: self, title: "Answer", message: "YES");
         }
         let noClosure = { (action: UIAlertAction) -> Void in
             MessageBox.Show(view: self, title: "Answer", message: "NO");
         }
-         */
-        
-        /*
+       
         YesNoBox.Show(
             view:self,
             title: "Yes or now",
             message: "Please choose",
             yesHandler: yesClosure,
             noHandler: noClosure)
-         */
+        
     }
 
     @IBAction func OnBtnCopyPassword(_ sender: Any)
     {
         //MessageBox.Show(view: self, title: "Hej", message: "Password");
         
-        //InputBox.Show(view: self, title: "Write something", message: "Text")
+        InputBox.Show(view: self, title: "Write something", message: "Text")
         
     }
     
     @IBAction func OnBtnRefreshPassword(_ sender: Any)
     {
-        //MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
+        MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
     }
     
     
     @IBAction func OnBtnDelete(_ sender: Any)
     {
-        //MessageBox.Show(view: self, title: "Hej", message: "Delete");
+        MessageBox.Show(view: self, title: "Hej", message: "Delete");
     }
 }
 

@@ -18,28 +18,25 @@ class YesNoBox
         view: UIViewController,
         title: String,
         message: String,
-        button1Title: String = "Yes",
-        button2Title: String = "No")
+        yesHandler: @escaping (UIAlertAction) -> Void,
+        noHandler: @escaping (UIAlertAction) -> Void)
     {
         let alert = UIAlertController(
             title: title as String,
             message: message as String,
             preferredStyle: UIAlertControllerStyle.alert)
         
-        alert.addAction(UIAlertAction(
-            title: button1Title,
+        let yesAction = UIAlertAction(
+            title: "Yes",
             style: UIAlertActionStyle.default,
-            handler:
-            { action in
-                Answer = 1
-            }))
-        alert.addAction(UIAlertAction(
-            title: button2Title,
+            handler: yesHandler)
+        alert.addAction(yesAction)
+        
+        let noAction = UIAlertAction(
+            title: "No",
             style: UIAlertActionStyle.default,
-            handler:
-            { action in
-                Answer = 0
-            }))
+            handler: noHandler)
+        alert.addAction(noAction)
         
         view.present(alert, animated: true, completion: nil)
         
