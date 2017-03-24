@@ -88,19 +88,19 @@ class DetailViewController: UIViewController {
     {
         //MessageBox.Show(view: self, title: "Hej", message: "Password");
         
-        InputBox.Show(view: self, title: "Write something", message: "Text")
+        //InputBox.Show(view: self, title: "Write something", message: "Text")
         
     }
     
     @IBAction func OnBtnRefreshPassword(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
+        //MessageBox.Show(view: self, title: "Hej", message: "Refresh password");
     }
     
     
     @IBAction func OnBtnDelete(_ sender: Any)
     {
-        MessageBox.Show(view: self, title: "Hej", message: "Delete");
+        //MessageBox.Show(view: self, title: "Hej", message: "Delete");
     }
 }
 
