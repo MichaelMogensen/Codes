@@ -77,7 +77,7 @@ class DetailViewController: UIViewController {
             title: "Yes or now",
             message: "Please choose",
             yesHandler: yesClosure,
-            noHandler: noClosure);
+            noHandler: noClosure)
     }
 
     @IBAction func OnBtnCopyPassword(_ sender: Any)
