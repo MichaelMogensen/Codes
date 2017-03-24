@@ -6,3 +6,41 @@ alert.addAction(UIAlertAction(title: "Launch the Missile", style: UIAlertActionS
 self.launchMissile()
 
 }))
+
+
+
+-------
+
+
+/*
+let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+
+let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
+// ...
+}
+alert.addAction(cancelAction)
+
+
+let nextAction = UIAlertAction(title: "Next", style: .default) { action -> Void in
+// ...
+let text = alert.textFields?.first?.text
+print(text ?? "nil")
+
+}
+alert.addAction(nextAction)
+
+
+alert.addTextField { textField -> Void in
+
+// ...
+textField.textColor = UIColor.blue
+textField.text = "hej"
+}
+
+
+view.present(alert, animated: true, completion: nil)
+*/
+
+
+

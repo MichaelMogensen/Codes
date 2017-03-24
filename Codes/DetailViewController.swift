@@ -76,10 +76,13 @@ class DetailViewController: UIViewController {
 
     @IBAction func OnBtnCopyPassword(_ sender: Any)
     {
-        //MessageBox.Show(view: self, title: "Hej", message: "Password");
-        
-        InputBox.Show(view: self, title: "Write something", message: "Text")
-        
+        InputBox.Show(
+            view: self,
+            title: "Write something",
+            message: "Text",
+            buttonConfirmTitle: "Tag den",
+            buttonCancelTitle: "Drop det",
+            defaultInputText: "default")
     }
     
     @IBAction func OnBtnRefreshPassword(_ sender: Any)

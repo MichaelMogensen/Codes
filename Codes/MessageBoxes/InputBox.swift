@@ -16,30 +16,47 @@ class InputBox
         view: UIViewController,
         title: String,
         message: String,
-        buttonConfirmTitle: String = "OK",
-        buttonCancelTitle: String = "Cancel")
+        buttonConfirmTitle: String,
+        buttonCancelTitle: String,
+        defaultInputText: String = "")
     {
-        //Create the AlertController
-        let actionSheetController: UIAlertController = UIAlertController(title: "Alert", message: "Swiftly Now! Choose an option!", preferredStyle: .alert)
         
-        //Create and add the Cancel action
-        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
-            //Do some stuff
-        }
-        actionSheetController.addAction(cancelAction)
-        //Create and an option action
-        let nextAction: UIAlertAction = UIAlertAction(title: "Next", style: .default) { action -> Void in
-            //Do some other stuff
-        }
-        actionSheetController.addAction(nextAction)
-        //Add a text field
-        actionSheetController.addTextField { textField -> Void in
-            //TextField configuration
-            textField.textColor = UIColor.blue
-        }
         
-        //Present the AlertController
-        view.present(actionSheetController, animated: true, completion: nil)
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(
+            title: buttonConfirmTitle,
+            style: .default,
+            handler: { action -> Void in
+                
+                let text = alert.textFields?.first?.text
+                print(text ?? "nil")
+                
+        })
+        alert.addAction(confirmAction)
+
+        let cancelAction = UIAlertAction(
+            title: buttonCancelTitle,
+            style: .cancel,
+            handler: { action -> Void in
+                
+                // Nothing...
+        })
+        alert.addAction(cancelAction)
+        
+        let configurationAction = { (textField: UITextField) -> Void in
+            textField.textColor = UIColor.black
+            textField.text = defaultInputText
+        }
+        alert.addTextField(configurationHandler: configurationAction)
+        
+        view.present(alert, animated: true, completion: nil)
+        
         
     }
+    
 }
+
