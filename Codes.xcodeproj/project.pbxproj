@@ -21,6 +21,9 @@
 		1E17B97F1E7D7E8A0098B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E17B97D1E7D7E8A0098B579 /* LaunchScreen.storyboard */; };
 		1E17B98A1E7D7E8A0098B579 /* CodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9891E7D7E8A0098B579 /* CodesTests.swift */; };
 		1E17B9951E7D7E8A0098B579 /* CodesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9941E7D7E8A0098B579 /* CodesUITests.swift */; };
+		1E5330511E8561B200234304 /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53304E1E8561B200234304 /* InputBox.swift */; };
+		1E5330521E8561B200234304 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53304F1E8561B200234304 /* MessageBox.swift */; };
+		1E5330531E8561B200234304 /* YesNoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5330501E8561B200234304 /* YesNoBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		1E17B9901E7D7E8A0098B579 /* CodesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E17B9941E7D7E8A0098B579 /* CodesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesUITests.swift; sourceTree = "<group>"; };
 		1E17B9961E7D7E8A0098B579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E53304E1E8561B200234304 /* InputBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputBox.swift; path = MessageBoxes/InputBox.swift; sourceTree = "<group>"; };
+		1E53304F1E8561B200234304 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = MessageBoxes/MessageBox.swift; sourceTree = "<group>"; };
+		1E5330501E8561B200234304 /* YesNoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YesNoBox.swift; path = MessageBoxes/YesNoBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 		1E0746DC1E81FE9C00B33720 /* MessageBoxes */ = {
 			isa = PBXGroup;
 			children = (
+				1E53304E1E8561B200234304 /* InputBox.swift */,
+				1E53304F1E8561B200234304 /* MessageBox.swift */,
+				1E5330501E8561B200234304 /* YesNoBox.swift */,
 			);
 			name = MessageBoxes;
 			sourceTree = "<group>";
@@ -307,7 +316,10 @@
 				1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */,
 				1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */,
 				1E17B9751E7D7E8A0098B579 /* MasterViewController.swift in Sources */,
+				1E5330531E8561B200234304 /* YesNoBox.swift in Sources */,
+				1E5330521E8561B200234304 /* MessageBox.swift in Sources */,
 				1E17B9771E7D7E8A0098B579 /* DetailViewController.swift in Sources */,
+				1E5330511E8561B200234304 /* InputBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
