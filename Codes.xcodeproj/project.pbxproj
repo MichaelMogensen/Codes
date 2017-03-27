@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E0746D71E81F8A400B33720 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746D41E81F8A400B33720 /* Copy.png */; };
-		1E0746D81E81F8A400B33720 /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746D51E81F8A400B33720 /* Delete.png */; };
-		1E0746D91E81F8A400B33720 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746D61E81F8A400B33720 /* Refresh.png */; };
-		1E0746DB1E81F8D100B33720 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746DA1E81F8D100B33720 /* Settings.png */; };
 		1E0746E01E8208BD00B33720 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0746DF1E8208BD00B33720 /* Notes.txt */; };
 		1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */; };
 		1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E17B9711E7D7E8A0098B579 /* Codes.xcdatamodeld */; };
@@ -24,6 +20,13 @@
 		1E5330511E8561B200234304 /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53304E1E8561B200234304 /* InputBox.swift */; };
 		1E5330521E8561B200234304 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53304F1E8561B200234304 /* MessageBox.swift */; };
 		1E5330531E8561B200234304 /* YesNoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5330501E8561B200234304 /* YesNoBox.swift */; };
+		1EC3CFAE1E89413900A9E679 /* Event2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFAD1E89413900A9E679 /* Event2.swift */; };
+		1EC3CFB01E89414A00A9E679 /* Event3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFAF1E89414A00A9E679 /* Event3.swift */; };
+		1EC3CFB41E8941EA00A9E679 /* EventHandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB31E8941EA00A9E679 /* EventHandlerWrapper.swift */; };
+		1EC3CFB91E89461800A9E679 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB51E89461800A9E679 /* Copy.png */; };
+		1EC3CFBA1E89461800A9E679 /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB61E89461800A9E679 /* Delete.png */; };
+		1EC3CFBB1E89461800A9E679 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB71E89461800A9E679 /* Refresh.png */; };
+		1EC3CFBC1E89461800A9E679 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB81E89461800A9E679 /* Settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E0746D41E81F8A400B33720 /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Copy.png; path = ../../../../Downloads/Copy.png; sourceTree = "<group>"; };
-		1E0746D51E81F8A400B33720 /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Delete.png; path = ../../../../Downloads/Delete.png; sourceTree = "<group>"; };
-		1E0746D61E81F8A400B33720 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refresh.png; path = ../../../../Downloads/Refresh.png; sourceTree = "<group>"; };
-		1E0746DA1E81F8D100B33720 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../../../Downloads/Settings.png; sourceTree = "<group>"; };
 		1E0746DF1E8208BD00B33720 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		1E17B96C1E7D7E8A0098B579 /* Codes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +66,13 @@
 		1E53304E1E8561B200234304 /* InputBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputBox.swift; path = MessageBoxes/InputBox.swift; sourceTree = "<group>"; };
 		1E53304F1E8561B200234304 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = MessageBoxes/MessageBox.swift; sourceTree = "<group>"; };
 		1E5330501E8561B200234304 /* YesNoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YesNoBox.swift; path = MessageBoxes/YesNoBox.swift; sourceTree = "<group>"; };
+		1EC3CFAD1E89413900A9E679 /* Event2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event2.swift; path = Events/Event2.swift; sourceTree = "<group>"; };
+		1EC3CFAF1E89414A00A9E679 /* Event3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event3.swift; path = Events/Event3.swift; sourceTree = "<group>"; };
+		1EC3CFB31E8941EA00A9E679 /* EventHandlerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventHandlerWrapper.swift; path = Events/EventHandlerWrapper.swift; sourceTree = "<group>"; };
+		1EC3CFB51E89461800A9E679 /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Copy.png; path = Icons/Copy.png; sourceTree = "<group>"; };
+		1EC3CFB61E89461800A9E679 /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Delete.png; path = Icons/Delete.png; sourceTree = "<group>"; };
+		1EC3CFB71E89461800A9E679 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refresh.png; path = Icons/Refresh.png; sourceTree = "<group>"; };
+		1EC3CFB81E89461800A9E679 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = Icons/Settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +133,9 @@
 		1E17B96E1E7D7E8A0098B579 /* Codes */ = {
 			isa = PBXGroup;
 			children = (
+				1EC3CFAC1E89412300A9E679 /* Events */,
+				1EC3CFAB1E89411A00A9E679 /* Icons */,
 				1E0746DC1E81FE9C00B33720 /* MessageBoxes */,
-				1E5C4C4F1E819F79007B0D4A /* Icons */,
 				1E17B96F1E7D7E8A0098B579 /* AppDelegate.swift */,
 				1E17B9741E7D7E8A0098B579 /* MasterViewController.swift */,
 				1E17B9761E7D7E8A0098B579 /* DetailViewController.swift */,
@@ -160,15 +167,25 @@
 			path = CodesUITests;
 			sourceTree = "<group>";
 		};
-		1E5C4C4F1E819F79007B0D4A /* Icons */ = {
+		1EC3CFAB1E89411A00A9E679 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				1E0746DA1E81F8D100B33720 /* Settings.png */,
-				1E0746D41E81F8A400B33720 /* Copy.png */,
-				1E0746D51E81F8A400B33720 /* Delete.png */,
-				1E0746D61E81F8A400B33720 /* Refresh.png */,
+				1EC3CFB51E89461800A9E679 /* Copy.png */,
+				1EC3CFB61E89461800A9E679 /* Delete.png */,
+				1EC3CFB71E89461800A9E679 /* Refresh.png */,
+				1EC3CFB81E89461800A9E679 /* Settings.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		1EC3CFAC1E89412300A9E679 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1EC3CFAD1E89413900A9E679 /* Event2.swift */,
+				1EC3CFAF1E89414A00A9E679 /* Event3.swift */,
+				1EC3CFB31E8941EA00A9E679 /* EventHandlerWrapper.swift */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,13 +298,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC3CFBC1E89461800A9E679 /* Settings.png in Resources */,
+				1EC3CFBA1E89461800A9E679 /* Delete.png in Resources */,
 				1E0746E01E8208BD00B33720 /* Notes.txt in Resources */,
-				1E0746DB1E81F8D100B33720 /* Settings.png in Resources */,
 				1E17B97F1E7D7E8A0098B579 /* LaunchScreen.storyboard in Resources */,
-				1E0746D81E81F8A400B33720 /* Delete.png in Resources */,
+				1EC3CFB91E89461800A9E679 /* Copy.png in Resources */,
 				1E17B97C1E7D7E8A0098B579 /* Assets.xcassets in Resources */,
-				1E0746D91E81F8A400B33720 /* Refresh.png in Resources */,
-				1E0746D71E81F8A400B33720 /* Copy.png in Resources */,
+				1EC3CFBB1E89461800A9E679 /* Refresh.png in Resources */,
 				1E17B97A1E7D7E8A0098B579 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,10 +331,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */,
+				1EC3CFB41E8941EA00A9E679 /* EventHandlerWrapper.swift in Sources */,
 				1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */,
 				1E17B9751E7D7E8A0098B579 /* MasterViewController.swift in Sources */,
+				1EC3CFAE1E89413900A9E679 /* Event2.swift in Sources */,
 				1E5330531E8561B200234304 /* YesNoBox.swift in Sources */,
 				1E5330521E8561B200234304 /* MessageBox.swift in Sources */,
+				1EC3CFB01E89414A00A9E679 /* Event3.swift in Sources */,
 				1E17B9771E7D7E8A0098B579 /* DetailViewController.swift in Sources */,
 				1E5330511E8561B200234304 /* InputBox.swift in Sources */,
 			);

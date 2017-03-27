@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
-class DetailViewController: UIViewController {
+//import
 
+class DetailViewController: UIViewController {
+ 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
     @IBOutlet weak var btnCopyUsername: UIButton!
@@ -58,10 +60,10 @@ class DetailViewController: UIViewController {
 
     @IBAction func OnBtnCopyUsername(_ sender: Any)
     {
-        let yesClosure = { (action: UIAlertAction) -> Void in
+        let yesEventHandler = { (action: UIAlertAction) -> Void in
             MessageBox.Show(view: self, title: "Answer", message: "YES");
         }
-        let noClosure = { (action: UIAlertAction) -> Void in
+        let noEventHandler = { (action: UIAlertAction) -> Void in
             MessageBox.Show(view: self, title: "Answer", message: "NO");
         }
        
@@ -69,8 +71,8 @@ class DetailViewController: UIViewController {
             view:self,
             title: "Yes or now",
             message: "Please choose",
-            yesHandler: yesClosure,
-            noHandler: noClosure)
+            yesHandler: yesEventHandler,
+            noHandler: noEventHandler)
         
     }
 
@@ -80,8 +82,8 @@ class DetailViewController: UIViewController {
             view: self,
             title: "Write something",
             message: "Text",
-            buttonConfirmTitle: "Tag den",
-            buttonCancelTitle: "Drop det",
+            buttonConfirmTitle: "Confirm",
+            buttonCancelTitle: "Cancel",
             defaultInputText: "default")
     }
     
