@@ -20,9 +20,7 @@
 		1E5330511E8561B200234304 /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53304E1E8561B200234304 /* InputBox.swift */; };
 		1E5330521E8561B200234304 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53304F1E8561B200234304 /* MessageBox.swift */; };
 		1E5330531E8561B200234304 /* YesNoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5330501E8561B200234304 /* YesNoBox.swift */; };
-		1EC3CFAE1E89413900A9E679 /* Event2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFAD1E89413900A9E679 /* Event2.swift */; };
-		1EC3CFB01E89414A00A9E679 /* Event3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFAF1E89414A00A9E679 /* Event3.swift */; };
-		1EC3CFB41E8941EA00A9E679 /* EventHandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB31E8941EA00A9E679 /* EventHandlerWrapper.swift */; };
+		1EC3CFAE1E89413900A9E679 /* EventX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3CFAD1E89413900A9E679 /* EventX.swift */; };
 		1EC3CFB91E89461800A9E679 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB51E89461800A9E679 /* Copy.png */; };
 		1EC3CFBA1E89461800A9E679 /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB61E89461800A9E679 /* Delete.png */; };
 		1EC3CFBB1E89461800A9E679 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3CFB71E89461800A9E679 /* Refresh.png */; };
@@ -66,9 +64,7 @@
 		1E53304E1E8561B200234304 /* InputBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputBox.swift; path = MessageBoxes/InputBox.swift; sourceTree = "<group>"; };
 		1E53304F1E8561B200234304 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = MessageBoxes/MessageBox.swift; sourceTree = "<group>"; };
 		1E5330501E8561B200234304 /* YesNoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YesNoBox.swift; path = MessageBoxes/YesNoBox.swift; sourceTree = "<group>"; };
-		1EC3CFAD1E89413900A9E679 /* Event2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event2.swift; path = Events/Event2.swift; sourceTree = "<group>"; };
-		1EC3CFAF1E89414A00A9E679 /* Event3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event3.swift; path = Events/Event3.swift; sourceTree = "<group>"; };
-		1EC3CFB31E8941EA00A9E679 /* EventHandlerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventHandlerWrapper.swift; path = Events/EventHandlerWrapper.swift; sourceTree = "<group>"; };
+		1EC3CFAD1E89413900A9E679 /* EventX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventX.swift; path = Events/EventX.swift; sourceTree = "<group>"; };
 		1EC3CFB51E89461800A9E679 /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Copy.png; path = Icons/Copy.png; sourceTree = "<group>"; };
 		1EC3CFB61E89461800A9E679 /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Delete.png; path = Icons/Delete.png; sourceTree = "<group>"; };
 		1EC3CFB71E89461800A9E679 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refresh.png; path = Icons/Refresh.png; sourceTree = "<group>"; };
@@ -181,9 +177,7 @@
 		1EC3CFAC1E89412300A9E679 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				1EC3CFAD1E89413900A9E679 /* Event2.swift */,
-				1EC3CFAF1E89414A00A9E679 /* Event3.swift */,
-				1EC3CFB31E8941EA00A9E679 /* EventHandlerWrapper.swift */,
+				1EC3CFAD1E89413900A9E679 /* EventX.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -331,13 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E17B9731E7D7E8A0098B579 /* Codes.xcdatamodeld in Sources */,
-				1EC3CFB41E8941EA00A9E679 /* EventHandlerWrapper.swift in Sources */,
 				1E17B9701E7D7E8A0098B579 /* AppDelegate.swift in Sources */,
 				1E17B9751E7D7E8A0098B579 /* MasterViewController.swift in Sources */,
-				1EC3CFAE1E89413900A9E679 /* Event2.swift in Sources */,
+				1EC3CFAE1E89413900A9E679 /* EventX.swift in Sources */,
 				1E5330531E8561B200234304 /* YesNoBox.swift in Sources */,
 				1E5330521E8561B200234304 /* MessageBox.swift in Sources */,
-				1EC3CFB01E89414A00A9E679 /* Event3.swift in Sources */,
 				1E17B9771E7D7E8A0098B579 /* DetailViewController.swift in Sources */,
 				1E5330511E8561B200234304 /* InputBox.swift in Sources */,
 			);

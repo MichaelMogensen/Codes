@@ -12,14 +12,19 @@ import UIKit
 // Show simple message box with one button.
 class InputBox
 {
+    static var _confirmEvent = EventX<String>()
+    
     static public func Show(
         view: UIViewController,
         title: String,
         message: String,
         buttonConfirmTitle: String,
         buttonCancelTitle: String,
-        defaultInputText: String = "")
+        defaultInputText: String,
+        confirmHandler: @escaping (String) -> Void)
     {
+        self._confirmEvent.Set(eventHandler: confirmHandler)
+        
         // Dialog.
         let alert = UIAlertController(
             title: title,
@@ -32,8 +37,9 @@ class InputBox
             style: .default,
             handler: { action -> Void in
                 
+                // Tell owner about text.
                 let text = alert.textFields?.first?.text
-                print(text ?? "nil")
+                _confirmEvent.Send(data: text!)
                 
         })
         alert.addAction(confirmAction)

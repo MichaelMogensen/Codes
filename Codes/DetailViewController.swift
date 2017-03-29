@@ -23,8 +23,12 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var btnDelete: UIButton!
     
+    let myHandler = {(eventText: String) -> Void in
+        print(eventText)
+    };
+    
     var detailItem: Event?
-        {
+    {
         didSet
         {
             // Update the view.
@@ -49,7 +53,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-         self.configureView()
+        self.configureView()
     }
 
     // Dispose of any resources that can be recreated.
@@ -84,7 +88,8 @@ class DetailViewController: UIViewController {
             message: "Text",
             buttonConfirmTitle: "Confirm",
             buttonCancelTitle: "Cancel",
-            defaultInputText: "default")
+            defaultInputText: "default",
+            confirmHandler: myHandler)
     }
     
     @IBAction func OnBtnRefreshPassword(_ sender: Any)
