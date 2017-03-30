@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 
-//import
+// +----------------------------------------+
+// + etsy.com                               +
+// +----------------------------------------+
 
 class DetailViewController: UIViewController {
  
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+//    @IBOutlet weak var codeName: UITextField!
 
     @IBOutlet weak var btnCopyUsername: UIButton!
     
@@ -23,11 +25,10 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var btnDelete: UIButton!
     
-    let myHandler = {(eventText: String) -> Void in
-        print(eventText)
-    };
     
-    var detailItem: Event?
+    private var _codeName: String = ""
+    
+    var detailItem: Code?
     {
         didSet
         {
@@ -36,16 +37,16 @@ class DetailViewController: UIViewController {
         }
     }
     
-    // Update the user interface for the detail item.
+    // Insert code name into text fiels of the detail item. Comming from db.
     func configureView()
     {
-        
-        if let detail = self.detailItem
+        if let data = self.detailItem
         {
-            if let label = self.detailDescriptionLabel
+            /*
+            if let codeName = self.codeName
             {
-                label.text = detail.timestamp!.description
-            }
+                 codeName.text = data.name
+            }*/
         }
     }
 
@@ -53,6 +54,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         self.configureView()
     }
 
@@ -82,6 +84,10 @@ class DetailViewController: UIViewController {
 
     @IBAction func OnBtnCopyPassword(_ sender: Any)
     {
+        let _newCodeEntryHandler = {(codeName: String) -> Void in
+            self._codeName = codeName
+        };
+
         InputBox.Show(
             view: self,
             title: "Write something",
@@ -89,7 +95,7 @@ class DetailViewController: UIViewController {
             buttonConfirmTitle: "Confirm",
             buttonCancelTitle: "Cancel",
             defaultInputText: "default",
-            confirmHandler: myHandler)
+            confirmHandler: _newCodeEntryHandler)
     }
     
     @IBAction func OnBtnRefreshPassword(_ sender: Any)
